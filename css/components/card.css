@@ -1,0 +1,106 @@
+.card-category {
+	height: 180px;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	border-radius: 6px;
+	font-size: 24px;
+	box-shadow: 2px 2px 3px #aeaeae;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-product {
+	height: 120px;
+	background: white;
+	display: flex;
+	align-items: center;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.card-product-infos {
+	padding-left: 20px;
+}
+
+.card-product img {
+	height: 100%;
+	object-fit: cover;	
+}
+
+.card-product h2 {
+	margin: 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.card-product p {
+	margin: 0;
+	font-size: 12px;
+	opacity: 0.7;
+}
+
+/* --- 
+overflow: 
+visible
+Valor por defecto. El contenido no es recortado, 
+podría ser dibujado fuera de la caja contenedora.
+
+hidden
+El contenido es recortado y no se muestran barras de posición.
+
+scroll
+El contenido es recortado y el navegador web usa las barras 
+de desplazamiento, se haya recortado contenido o no. 
+Esto previene cualquier problema con las barras de desplazamiento 
+apareciendo o desapareciendo en un entorno dinámico. 
+Puede que las impresoras impriman contenido excedente.
+
+auto
+Depende del agente de usuario. Navegadores de escritorio como 
+Firefox proveen barras de desplazamiento si hay contenido 
+excedente---*/
+
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-trip img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+ /*---img.avatar-bordered.card-trip-user se usa para especificar
+ img clase avatar-bordered y card-trip-user para ser más específico
+ todavía ---*/
+img.avatar-bordered.card-trip-user {
+  position: absolute;
+  right: 16px;
+  bottom: 50px;
+  width: 40px;
+  height: 40px;
+}
+
